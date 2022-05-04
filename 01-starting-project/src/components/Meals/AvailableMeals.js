@@ -31,24 +31,24 @@ const DUMMY_MEALS = [
 ];
 
 export const AvailableMeals = () => {
-    const meals = DUMMY_MEALS.map(curmeal => (
-        <li>
-            {/* {curmeal.name} */}
-            <MealItem key={curmeal.id} 
-            name={curmeal.name}
-            description={curmeal.description}
-            price={curmeal.price}
-             />
+  const meals = DUMMY_MEALS.map(curmeal => (
 
-        </li>
-    ))
+    <MealItem key={curmeal.id}
+      id={curmeal.id}
+      name={curmeal.name}
+      description={curmeal.description}
+      price={curmeal.price}
+    />
+
+
+  ))
   return (
     <section className={classes.meals}>
       <Card>
 
-      <ul>     {meals} </ul>
-      </Card> 
-          </section>
-          
+        <ul>     {meals} </ul>
+      </Card>
+    </section>
+
   )
 }

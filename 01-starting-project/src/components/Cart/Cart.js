@@ -7,7 +7,7 @@ export const Cart = ({ hideCartHandler}) => {
         name: "mobile",
         amount: 2,
         price: 12.99,
-    }].map((curItem) => <li>{curItem.id}</li>)}
+    }].map((curItem) => <li key={curItem.id}>{curItem.id}</li>)}
     </ul>)
     return (
         <>

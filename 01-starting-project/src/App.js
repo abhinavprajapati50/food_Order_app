@@ -16,6 +16,7 @@ function App() {
 
   return (
     <CartContext__Provider>
+      
       <Header onShowCart={showCartHandler} />
       {cartIsShown && <Cart hideCartHandler={ hideCartHandler }/>}
       <main>
